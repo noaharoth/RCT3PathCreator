@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{84A4A353-3561-4868-9EAD-3D36957B5D43}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>PathCreator</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Noah\Documents\Visual Studio 2013\Projects\RCT3AssetLibrary\RCT3AssetLibrary;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20;C:\Users\Noah\Documents\Coding\squish-1.11;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\xlib;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\Magick++\lib;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\magick;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\Magick++;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\Magick++\demo;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\Magick++\lib\Magick++;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\Magick++\tests;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Noah\Documents\Visual Studio 2012\Projects\include\DevIL-SDK-x86-1.7.8\lib\unicode;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Noah\Documents\Visual Studio 2013\Projects\RCT3AssetLibrary\RCT3AssetLibrary;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20;C:\Users\Noah\Documents\Coding\squish-1.11;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\xlib;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\Magick++\lib;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\magick;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\Magick++;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\Magick++\demo;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\Magick++\lib\Magick++;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\Magick++\tests;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;WIN32;_VISUALC_;NeedFunctionPrototypes;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>/MACHINE:X86;RCT3AssetLibrary_d.lib;CORE_DB_bzlib_.lib;CORE_DB_coders_.lib;CORE_DB_filters_.lib;CORE_DB_jbig_.lib;CORE_DB_jp2_.lib;CORE_DB_jpeg_.lib;CORE_DB_lcms_.lib;CORE_DB_libxml_.lib;CORE_DB_magick_.lib;CORE_DB_Magick++_.lib;CORE_DB_png_.lib;CORE_DB_tiff_.lib;CORE_DB_ttf_.lib;CORE_DB_wand_.lib;CORE_DB_webp_.lib;CORE_DB_xlib_.lib;CORE_DB_zlib_.lib;CORE_DB_wmf_.lib;kernel32.lib;user32.lib;gdi32.lib;odbc32.lib;odbccp32.lib;ole32.lib;oleaut32.lib;winmm.lib;wsock32.lib;advapi32.lib;squishd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <EmbedManagedResourceFile>Images\bar_button.png;Images\bar_button_green.png;Images\bar_button_red.png;Images\bar_button_yellow.png;Images\item_bar.png;Images\noImageSelected.png;Images\bar_decor.png;Images\bar_decor_blue.png;Icons\balloon_exclamation.png;Icons\folder_horizontal_open.png;Icons\gear.png;Icons\question.png;Icons\arrow_left.png;Icons\arrow_right.png;Icons\cross_script.png;Icons\disk.png;Icons\disk_pencil.png;Icons\disks_black.png;Icons\image.png;Icons\information.png;Icons\stairs.png;Text\version.txt;Text\Help-Models.rtf;Text\Help-Overview.rtf;Text\Help-Textures.rtf;Text\Help-Icons.rtf;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <AdditionalLibraryDirectories>C:\Users\Noah\Documents\Visual Studio 2013\Projects\RCT3AssetLibrary\Debug;C:\Users\Noah\Documents\Coding\squish-1.11\lib\vs9;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\VisualMagick\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;WIN32;_VISUALC_;NeedFunctionPrototypes;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>/MACHINE:X86;RCT3AssetLibrary.lib;CORE_RL_coders_.lib;CORE_RL_filters_.lib;CORE_RL_jbig_.lib;CORE_RL_jp2_.lib;CORE_RL_jpeg_.lib;CORE_RL_lcms_.lib;CORE_RL_libxml_.lib;CORE_RL_magick_.lib;CORE_RL_Magick++_.lib;CORE_RL_png_.lib;CORE_RL_tiff_.lib;CORE_RL_ttf_.lib;CORE_RL_wand_.lib;CORE_RL_webp_.lib;CORE_RL_xlib_.lib;CORE_RL_zlib_.lib;CORE_RL_wmf_.lib;CORE_RL_bzlib_.lib;kernel32.lib;user32.lib;gdi32.lib;odbc32.lib;odbccp32.lib;ole32.lib;oleaut32.lib;winmm.lib;wsock32.lib;advapi32.lib;squish.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <EmbedManagedResourceFile>Images\bar_button.png;Images\bar_button_green.png;Images\bar_button_red.png;Images\bar_button_yellow.png;Images\item_bar.png;Images\noImageSelected.png;Images\bar_decor.png;Images\bar_decor_blue.png;Icons\balloon_exclamation.png;Icons\folder_horizontal_open.png;Icons\gear.png;Icons\question.png;Icons\arrow_left.png;Icons\arrow_right.png;Icons\cross_script.png;Icons\disk.png;Icons\disk_pencil.png;Icons\disks_black.png;Icons\image.png;Icons\information.png;Icons\stairs.png;Text\version.txt;Text\Help-Models.rtf;Text\Help-Overview.rtf;Text\Help-Textures.rtf;Text\Help-Icons.rtf;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <AdditionalLibraryDirectories>C:\Users\Noah\Documents\Visual Studio 2013\Projects\RCT3AssetLibrary\Release;C:\Users\Noah\Documents\Coding\squish-1.11\lib\vs9;C:\Users\Noah\Documents\Coding\GraphicsMagick-1.3.20\VisualMagick\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico" />
+    <None Include="Icons\arrow_left.png" />
+    <None Include="Icons\arrow_right.png" />
+    <None Include="Icons\balloon_exclamation.png" />
+    <None Include="Icons\cross_script.png" />
+    <None Include="Icons\disk.png" />
+    <None Include="Icons\disks_black.png" />
+    <None Include="Icons\disk_pencil.png" />
+    <None Include="Icons\folder_horizontal_open.png" />
+    <None Include="Icons\gear.png" />
+    <None Include="Icons\image.png" />
+    <None Include="Icons\information.png" />
+    <None Include="Icons\question.png" />
+    <None Include="Icons\stairs.png" />
+    <None Include="Images\bar_button.png" />
+    <None Include="Images\bar_button_green.png" />
+    <None Include="Images\bar_button_red.png" />
+    <None Include="Images\bar_button_yellow.png" />
+    <None Include="Images\bar_decor.png" />
+    <None Include="Images\bar_decor_blue.png" />
+    <None Include="Images\item_bar.png" />
+    <None Include="Images\noImageSelected.png" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutWindow.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="AutoLoadDialog.cpp" />
+    <ClCompile Include="ExtendedModelsControl.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="HelpWindow.cpp" />
+    <ClCompile Include="HomeWindow.cpp" />
+    <ClCompile Include="InfoControl.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="ModelsControl.cpp" />
+    <ClCompile Include="PathCreator.cpp" />
+    <ClCompile Include="PathHelper.cpp" />
+    <ClCompile Include="ProgramSettings.cpp" />
+    <ClCompile Include="ProgramSettingsWindow.cpp" />
+    <ClCompile Include="QueueHelper.cpp" />
+    <ClCompile Include="QueueModelsControl.cpp" />
+    <ClCompile Include="QueueTextureControl.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TextureControl.cpp" />
+    <ClCompile Include="UpdateWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AutoLoadDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExtendedModelsControl.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="global.h" />
+    <ClInclude Include="HelpWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="HomeWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="images.h" />
+    <ClInclude Include="InfoControl.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ModelsControl.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="PathHelper.h" />
+    <ClInclude Include="ProgramSettings.h" />
+    <ClInclude Include="ProgramSettingsWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="QueueHelper.h" />
+    <ClInclude Include="QueueModelsControl.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="QueueTextureControl.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TextureControl.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="TransparentLabel.h" />
+    <ClInclude Include="UpdateWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutWindow.resx">
+      <DependentUpon>AboutWindow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoLoadDialog.resx">
+      <DependentUpon>AutoLoadDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendedModelsControl.resx">
+      <DependentUpon>ExtendedModelsControl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpWindow.resx">
+      <DependentUpon>HelpWindow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeWindow.resX">
+      <DependentUpon>HomeWindow.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoControl.resx">
+      <DependentUpon>InfoControl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelsControl.resx">
+      <DependentUpon>ModelsControl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramSettingsWindow.resx">
+      <DependentUpon>ProgramSettingsWindow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueueModelsControl.resx">
+      <DependentUpon>QueueModelsControl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueueTextureControl.resx">
+      <DependentUpon>QueueTextureControl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextureControl.resx">
+      <DependentUpon>TextureControl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateWindow.resx">
+      <DependentUpon>UpdateWindow.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
